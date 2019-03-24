@@ -55,57 +55,65 @@ Partial Class frmTechFair
         '
         'btnDetails
         '
-        Me.btnDetails.Location = New System.Drawing.Point(167, 313)
+        Me.btnDetails.BackColor = System.Drawing.Color.Honeydew
+        Me.btnDetails.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnDetails.Location = New System.Drawing.Point(157, 222)
         Me.btnDetails.Name = "btnDetails"
         Me.btnDetails.Size = New System.Drawing.Size(246, 55)
         Me.btnDetails.TabIndex = 2
         Me.btnDetails.Text = "View Job Fair Details"
-        Me.btnDetails.UseVisualStyleBackColor = True
+        Me.btnDetails.UseVisualStyleBackColor = False
         '
         'lblDate
         '
         Me.lblDate.AutoSize = True
         Me.lblDate.Font = New System.Drawing.Font("Tahoma", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDate.Location = New System.Drawing.Point(203, 404)
+        Me.lblDate.Location = New System.Drawing.Point(203, 369)
         Me.lblDate.Name = "lblDate"
         Me.lblDate.Size = New System.Drawing.Size(173, 35)
         Me.lblDate.TabIndex = 3
         Me.lblDate.Text = "May 2, 2016"
+        Me.lblDate.Visible = False
         '
         'lblLocation
         '
         Me.lblLocation.AutoSize = True
         Me.lblLocation.Font = New System.Drawing.Font("Tahoma", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLocation.Location = New System.Drawing.Point(136, 509)
+        Me.lblLocation.Location = New System.Drawing.Point(126, 451)
         Me.lblLocation.Name = "lblLocation"
         Me.lblLocation.Size = New System.Drawing.Size(310, 35)
         Me.lblLocation.TabIndex = 4
         Me.lblLocation.Text = "Located in Lochlan Hall"
+        Me.lblLocation.Visible = False
         '
         'lblRoom
         '
         Me.lblRoom.AutoSize = True
         Me.lblRoom.Font = New System.Drawing.Font("Tahoma", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRoom.Location = New System.Drawing.Point(216, 578)
+        Me.lblRoom.Location = New System.Drawing.Point(203, 531)
         Me.lblRoom.Name = "lblRoom"
         Me.lblRoom.Size = New System.Drawing.Size(146, 35)
         Me.lblRoom.TabIndex = 5
         Me.lblRoom.Text = "Room 101"
+        Me.lblRoom.Visible = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.Honeydew
         Me.btnExit.Location = New System.Drawing.Point(209, 791)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(181, 50)
         Me.btnExit.TabIndex = 6
         Me.btnExit.Text = "Exit Window"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'picFair
         '
-        Me.picFair.Location = New System.Drawing.Point(678, 44)
+        Me.picFair.Image = Global.CPT185_Homework.My.Resources.Resources.Fair
+        Me.picFair.Location = New System.Drawing.Point(579, 70)
         Me.picFair.Name = "picFair"
-        Me.picFair.Size = New System.Drawing.Size(495, 843)
+        Me.picFair.Size = New System.Drawing.Size(499, 746)
+        Me.picFair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picFair.TabIndex = 7
         Me.picFair.TabStop = False
         '
@@ -113,7 +121,8 @@ Partial Class frmTechFair
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1304, 921)
+        Me.BackColor = System.Drawing.Color.BlanchedAlmond
+        Me.ClientSize = New System.Drawing.Size(1203, 921)
         Me.Controls.Add(Me.picFair)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblRoom)
